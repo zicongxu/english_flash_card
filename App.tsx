@@ -1,54 +1,24 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Upload, BookOpen, RotateCw, CheckCircle2, FileText, ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, RotateCw, CheckCircle2, ArrowRight, Play } from 'lucide-react';
 import { ViewState, FlashcardData } from './types';
-import { DEFAULT_RAW_DATA } from './constants';
-import { parseRawText } from './services/parserService';
+import { TOPICS, Topic } from './src/data';
 import Button from './components/Button';
 import Flashcard from './components/Flashcard';
 import ProgressBar from './components/ProgressBar';
 
 const App: React.FC = () => {
   const [view, setView] = useState<ViewState>('HOME');
+  const [currentTopic, setCurrentTopic] = useState<Topic | null>(null);
   const [cards, setCards] = useState<FlashcardData[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Initialize with default data for instant demo
-  useEffect(() => {
-    // Only parse if we haven't loaded anything yet
-    if (cards.length === 0) {
-      const parsed = parseRawText(DEFAULT_RAW_DATA);
-      // setCards(parsed); // Don't set automatically to let user choose, or uncomment to auto-load
-    }
-  }, []);
-
-  const handleStartDefault = () => {
-    const parsed = parseRawText(DEFAULT_RAW_DATA);
-    setCards(parsed);
+  const handleStartTopic = (topic: Topic) => {
+    setCurrentTopic(topic);
+    setCards(topic.data);
     setCurrentIndex(0);
     setIsFlipped(false);
     setView('STUDY');
-  };
-
-  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const text = e.target?.result as string;
-      const parsed = parseRawText(text);
-      if (parsed.length > 0) {
-        setCards(parsed);
-        setCurrentIndex(0);
-        setIsFlipped(false);
-        setView('STUDY');
-      } else {
-        alert("Couldn't find any valid cards in the file. Please check the format.");
-      }
-    };
-    reader.readAsText(file);
   };
 
   const handleNext = () => {
@@ -63,6 +33,15 @@ const App: React.FC = () => {
 
   const handleExit = () => {
     if (confirm("Are you sure you want to quit this session?")) {
+      setView('HOME');
+      setCurrentTopic(null);
+    }
+  };
+
+  const handleRestart = () => {
+    if (currentTopic) {
+      handleStartTopic(currentTopic);
+    } else {
       setView('HOME');
     }
   };
@@ -80,34 +59,24 @@ const App: React.FC = () => {
       </div>
 
       <div className="w-full space-y-4">
-        <Button fullWidth size="lg" onClick={handleStartDefault}>
-          <FileText size={20} />
-          Try Sample Deck
-        </Button>
-        
-        <div className="relative">
-          <input
-            type="file"
-            accept=".txt"
-            ref={fileInputRef}
-            onChange={handleFileUpload}
-            className="hidden"
-          />
-          <Button 
-            fullWidth 
-            size="lg" 
-            variant="secondary" 
-            onClick={() => fileInputRef.current?.click()}
-          >
-            <Upload size={20} />
-            Upload File
-          </Button>
+        <h2 className="text-xl font-bold text-duo-text mb-4 text-center">Choose a Topic</h2>
+        <div className="space-y-3">
+          {TOPICS.map((topic) => (
+            <div 
+              key={topic.id}
+              className="bg-white border-2 border-duo-gray-light rounded-2xl p-4 hover:border-duo-blue cursor-pointer transition-colors shadow-sm"
+              onClick={() => handleStartTopic(topic)}
+            >
+              <h3 className="font-bold text-lg text-duo-text mb-1">{topic.title}</h3>
+              <p className="text-sm text-duo-gray-dark mb-3">{topic.description}</p>
+              <Button fullWidth size="sm" variant="secondary" onClick={(e) => { e.stopPropagation(); handleStartTopic(topic); }}>
+                <Play size={16} />
+                Start Lesson
+              </Button>
+            </div>
+          ))}
         </div>
       </div>
-      
-      <p className="mt-8 text-xs text-duo-gray-dark text-center px-8">
-        Upload a .txt file formatted with "1. word", "中文含义：", and "实战例句：" to create your own deck.
-      </p>
     </div>
   );
 
@@ -157,10 +126,10 @@ const App: React.FC = () => {
       </div>
 
       <div className="w-full max-w-xs space-y-4">
-        <Button fullWidth size="lg" onClick={() => setView('HOME')}>
-          Back to Home
+        <Button fullWidth size="lg" onClick={() => { setView('HOME'); setCurrentTopic(null); }}>
+          Back to Topics
         </Button>
-        <Button fullWidth size="lg" variant="secondary" onClick={handleStartDefault}>
+        <Button fullWidth size="lg" variant="secondary" onClick={handleRestart}>
           <RotateCw size={20} />
           Review Again
         </Button>

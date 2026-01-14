@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "term": "book a flight",
+    "definition": "预订航班",
+    "example": "I need to book a flight to London for next week.（我需要预订一张下周去伦敦的机票。）",
+    "relations": [
+      "联想：travel agency（旅行社）"
+    ]
+  },
+  {
+    "id": 2,
+    "term": "carry-on luggage",
+    "definition": "随身携带的行李",
+    "example": "Make sure your carry-on luggage meets the size requirements.（确保你的随身行李符合尺寸要求。）",
+    "relations": [
+      "反义：checked luggage（托运的行李）"
+    ]
+  },
+  {
+    "id": 3,
+    "term": "tourist attraction",
+    "definition": "旅游景点",
+    "example": "The Great Wall is a famous tourist attraction in China.（长城是中国著名的旅游景点。）",
+    "relations": [
+      "联想：sightseeing（观光）"
+    ]
+  }
+]
