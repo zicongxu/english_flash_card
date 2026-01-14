@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "term": "deadline",
+    "definition": "截止日期",
+    "example": "The deadline for the project is next Friday.（这个项目的截止日期是下周五。）",
+    "relations": [
+      "联想：due date（到期日）"
+    ]
+  },
+  {
+    "id": 2,
+    "term": "colleague",
+    "definition": "同事",
+    "example": "I'm going to have lunch with my colleagues.（我要和同事们一起去吃午饭。）",
+    "relations": [
+      "同义：coworker（同事）"
+    ]
+  },
+  {
+    "id": 3,
+    "term": "meeting",
+    "definition": "会议",
+    "example": "We have a weekly meeting every Monday morning.（我们每周一上午都有周会。）",
+    "relations": [
+      "联想：conference（大会）"
+    ]
+  }
+]

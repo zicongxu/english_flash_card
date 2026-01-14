@@ -1,0 +1,183 @@
+[
+    {
+        "id": 1,
+        "term": "become widely available",
+        "definition": "得到广泛的普及（英语为第二语言的学习者倾向于表达为 “a large number of people can use it”）",
+        "example": "The Internet had become widely available to households in the UK by 2000.（截至 2000 年，因特网在英国已经广泛进入家庭了。）",
+        "relations": [
+            "反义：be shrouded in secrecy（没有被大家所熟知）",
+            "联想：scientific breakthroughs（科学上的新突破）"
+        ]
+    },
+    {
+        "id": 2,
+        "term": "break new ground",
+        "definition": "开拓新的领域（英语为第二语言的学习者倾向于表达为 “do new research”）",
+        "example": "This biologist and his team members have been breaking new ground in genetic research.（这位生物学家和他的研究队伍在基因领域做出了重大突破。）",
+        "relations": [
+            "联想 1：the advent of sth.（某种新科技、新产品或新制度的到来）",
+            "联想 2：supersede /supplant sth.（取代过去的某种事物）"
+        ]
+    },
+    {
+        "id": 3,
+        "term": "welcome sth. with open arms",
+        "definition": "热情地迎接某种新技术的到来",
+        "example": "TV viewers welcomed the arrival of HDTV with open arms.（观众们热情地欢迎高清晰度时代的到来。）",
+        "relations": [
+            "联想 1：popularise sth.（让某种新生事物得到普及）",
+            "联想 2：dependency on sth.（对某事物的依赖）"
+        ]
+    },
+    {
+        "id": 4,
+        "term": "genetic engineering",
+        "definition": "基因工程",
+        "example": "Genetic engineering can be used to cultivate productive and disease-resistant farm animals.（基因工程可以用来培育出生产力和抗病性更强的家畜。）",
+        "relations": [
+            "联想 1：genetically-modified food（转基因食品）",
+            "联想 2：minimise the risk of sth.（尽可能减小某种风险出现的可能性）"
+        ]
+    },
+    {
+        "id": 5,
+        "term": "cloud computing",
+        "definition": "云计算技术",
+        "example": "Cloud computing will permit access to multiple data centers anywhere on Earth.（通过云计算技术，计算机可以做到进入到世界上任何一个数据中心。）",
+        "relations": [
+            "联想 1：telecommuting（远程上班）",
+            "联想 2：meteorological satellites（气象卫星）"
+        ]
+    },
+    {
+        "id": 6,
+        "term": "communications equipment",
+        "definition": "通讯设备",
+        "example": "Soldiers will benefit from the communications equipment during natural disasters.（士兵将在面对自然灾害的时候从通讯设备上得到便利。）",
+        "relations": [
+            "联想：teleconferencing（远程电视会议）"
+        ]
+    },
+    {
+        "id": 7,
+        "term": "a manned mission",
+        "definition": "载人航天任务（英语为第二语言的学习者倾向于表达为 “space travel with people”）",
+        "example": "These scientists are discussing the possibility of a manned mission to Mars.（这些科学家正在讨论载人火星航行的可行性。）",
+        "relations": [
+            "联想 1：zero gravity /weightlessness（失重状态）",
+            "联想 2：astronaut（宇航员）",
+            "联想 3：experiment with sth.（对某种新事物进行试验）"
+        ]
+    },
+    {
+        "id": 8,
+        "term": "satisfy human curiosity",
+        "definition": "满足人类的好奇心",
+        "example": "A good reason to support space exploration is to satisfy human curiosity.（支持太空探索的一个重要理由就是这样可以满足人类的好奇心。）",
+        "relations": [
+            "联想 1：a hard-won discovery（难得的发现）",
+            "联想 2：space race（太空竞赛）"
+        ]
+    },
+    {
+        "id": 9,
+        "term": "social networking websites",
+        "definition": "社交网站",
+        "example": "Social networking websites like Facebook and Twitter are a good way to make connections with people with similar interests and goals.（像 Facebook 和 Twitter 这样的社交网站给了人们联系其他有着共同兴趣目标的人一个平台。）",
+        "relations": [
+            "联想 1：interact with（相互交流，互动）",
+            "联想 2：identity theft（盗用用户名）"
+        ]
+    },
+    {
+        "id": 10,
+        "term": "e-mail fraud",
+        "definition": "电子邮件诈骗",
+        "example": "Three local men were convicted of e-mail fraud.（三名本地人犯下了电子邮件诈骗的罪行。）",
+        "relations": [
+            "联想：e-mail spamming（被大批量群发的垃圾邮件）"
+        ]
+    },
+    {
+        "id": 11,
+        "term": "artificial intelligence",
+        "definition": "人工智能",
+        "example": "As information management becomes increasingly complex, artificial intelligence will allow us to share information within and across organisations.（随着信息管理的不断复杂化，人工智能能让我们在组织内共享信息。）",
+        "relations": [
+            "联想：a high-tech gizmo（泛指体积小巧的高科技产品）"
+        ]
+    },
+    {
+        "id": 12,
+        "term": "superconductor",
+        "definition": "n. 超导",
+        "example": "The use of maglev with superconductors has been on the rise.（使用超导技术的磁悬浮列车正在蓬勃发展中。）",
+        "relations": [
+            "联想：supersonic（adj. 超音速的）"
+        ]
+    },
+    {
+        "id": 13,
+        "term": "be mechanised",
+        "definition": "机械化的",
+        "example": "Mechanised farming has reduced the cost of production of various crops.（机械化农场可以减少种植各种作物的开销。）",
+        "relations": [
+            "联想：mass production（大规模生产）"
+        ]
+    },
+    {
+        "id": 14,
+        "term": "Silicon Valley",
+        "definition": "硅谷（英语中很多时候也用来泛指 IT 产业）",
+        "example": "Thames Valley is often considered to be the UK's Silicon Valley.（泰晤士谷往往被认为是硅谷的英国版。）",
+        "relations": [
+            "联想：information highway（信息高速公路，应试可代替 the Internet）"
+        ]
+    },
+    {
+        "id": 15,
+        "term": "speed up the pace of sth.",
+        "definition": "加快某事物的节奏（英语为第二语言的学习者倾向于表达为 “make sth. faster”）",
+        "example": "The agency's services have helped laboratories to speed up the pace of scientific discovery.（代理服务可以帮助实验室加速科学探索的过程。）",
+        "relations": [
+            "联想：set priorities（分清主次，确定需要优先完成的任务）"
+        ]
+    },
+    {
+        "id": 16,
+        "term": "virtual reality",
+        "definition": "由计算机网络虚拟的现实",
+        "example": "In the future children may find human relationships inconvenient and confusing, and prefer to stay inside a virtual reality.（未来的孩子们可能会感觉人类间的关系过于复杂不便，于是他们更愿意待在自己的虚拟环境中。）",
+        "relations": [
+            "联想：high-definition（adj. 高清晰度的）"
+        ]
+    },
+    {
+        "id": 17,
+        "term": "bring liberation from sth.",
+        "definition": "让某人不再受…… 的束缚",
+        "example": "Automation systems have brought liberation from exhausting labour and have set us free to enjoy more interesting work and leisure.（自动化系统将人们从费力的体力劳动中解放出来，而使我们可以参与其他更加悠闲有趣的工作。）",
+        "relations": [
+            "联想 1：automation（自动化）",
+            "联想 2：boost crop yield（提高农作物的产量）"
+        ]
+    },
+    {
+        "id": 18,
+        "term": "It is conceivable that...",
+        "definition": "可以想见的是……（英语为第二语言的学习者倾向于表达为 “It will be possible in the future that...”）",
+        "example": "It is conceivable that robots will steadily replace humans in repetitive jobs.（可以想见的是，机器人将会逐渐代替人类来完成那些枯燥重复的工作。）",
+        "relations": [
+            "联想：realise the untapped potential of...（发挥某事物尚未发挥出的潜力）"
+        ]
+    },
+    {
+        "id": 19,
+        "term": "Some scientific evidence has emerged to the contrary.",
+        "definition": "有些科学研究成果已证明（某种观点）并不正确",
+        "example": "There has never been any unbiased evidence that this disease is genetic; in fact, some scientific evidence has emerged to the contrary.（从来没有任何确凿的证据能证明这些病是由基因引起的，事实上，一些科学证据甚至将结论指向了相反的方向。）",
+        "relations": [
+            "反义：There is considerable evidence suggesting that...（有很多证据显示……）"
+        ]
+    }
+]
